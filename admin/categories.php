@@ -20,6 +20,7 @@
                         <small>Subheading</small>
                     </h1>
 
+
                     <div class="col-xs-6">
                         <form action="">
                             <div class="form-group">
@@ -33,22 +34,34 @@
                     </div>
 
                     <div class="col-xs-6">
-                        <table class="table table-bordered table-hover">
-                            <thead>
+                        <?php
+                        $query = "SELECT * FROM categories";
+                        $select_categories = mysqli_query($connection, $query);
+                        ?>
+                        <table class="table table-bordered table-hover  ">
+                            <thead class="">
                             <tr>
+                                <th>Category id</th>
                                 <th>Category title</th>
                             </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Warsztat</td>
-                                </tr>
-                                <tr>
-                                    <td>Galeria</td>
-                                </tr>
-                                <tr>
-                                    <td>Wydarzenia</td>
-                                </tr>
+                            <?php
+
+                            $select_all_categories_query = mysqli_query($connection, $query);
+
+                            while ($row = mysqli_fetch_assoc($select_categories)) {
+                                $cat_id = $row['cat_id'];
+                                $cat_title = $row['cat_title'];
+
+                                echo "<tr>";
+                                echo "<td class='colx-xs-2'>{$cat_id}</td>";
+                                echo "<td>{$cat_title}</td></tr>";
+                                echo "<tr>";
+
+                            }
+
+                            ?>
                             </tbody>
                         </table>
                     </div>

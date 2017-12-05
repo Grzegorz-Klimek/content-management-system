@@ -19,6 +19,12 @@
     <!-- Blog Categories Well -->
     <div class="well">
         <h4>Blog Categories</h4>
+
+        <?php
+            $query = "SELECT * FROM categories";
+            $select_categories_sidebar = mysqli_query($connection, $query);
+        ?>
+
         <div class="row">
             <div class="col-lg-12">
                 <ul class="list-unstyled">
