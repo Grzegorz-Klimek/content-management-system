@@ -11,6 +11,16 @@
         if(!$search_query) {
             die('ups...' . mysqli_error($connection));
         }
+
+        $count = mysqli_num_rows($search_query);
+
+        if($count == 0) {
+            echo "NO RESULTS";
+        }
+
+
+
+
     }
 
     ?>
