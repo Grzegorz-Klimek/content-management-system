@@ -36,14 +36,17 @@
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
-                                <th>Id</th>
                                 <th>Category title</th>
                             </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Warsztat</td>
+                                </tr>
+                                <tr>
                                     <td>Galeria</td>
+                                </tr>
+                                <tr>
                                     <td>Wydarzenia</td>
                                 </tr>
                             </tbody>
