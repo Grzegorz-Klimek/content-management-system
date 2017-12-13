@@ -24,7 +24,13 @@
 
                         <?php include "includes/add-category.php" ?>
                         <br>
-                        <?php include "includes/update-category.php" ?>
+                        <?php
+
+                            if(isset($_GET['update'])) {
+                                include "includes/update-category.php";
+                            }
+
+                        ?>
 
                     </div>
 
