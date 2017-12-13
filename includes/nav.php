@@ -24,7 +24,9 @@
                 }
 
                 ?>
-                <li><a href="./admin">Admin</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./admin"><span class="fa fa-unlock-alt" aria-hidden="true"></span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

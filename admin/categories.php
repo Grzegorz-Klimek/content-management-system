@@ -15,22 +15,34 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">
-                        Blank Page
-                        <small>Subheading</small>
+                        Categories
+                        <small>create or edit them</small>
                     </h1>
 
 
                     <div class="col-xs-6">
 
-                        <?php include "includes/add-category.php" ?>
+                        <?php categoryAdd() ?>
+
+
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="cat_title">Add category</label>
+                                <input type="text" class="form-control" name="cat_title">
+                            </div>
+                            <div class="form-group">
+                                <input class="btn btn-primary" type="submit" name="add" value="Add category">
+                            </div>
+                        </form>
                         <br>
+
                         <?php
-
-                            if(isset($_GET['update'])) {
-                                include "includes/update-category.php";
-                            }
-
+                        if(isset($_GET['update'])) {
+                            include "includes/categoryUpdates.php";
+                        }
                         ?>
+
+
 
                     </div>
 
@@ -46,9 +58,8 @@
                             </thead>
                             <tbody>
 
-                            <?php include "includes/show-category.php" ?>
-
-                            <?php include "includes/delete-category.php" ?>
+                            <?php findAllCategories(); ?>
+                            <?php deleteCategory(); ?>
 
 
                             </tbody>

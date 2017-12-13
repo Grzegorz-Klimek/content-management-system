@@ -7,11 +7,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">CMS Admin</a>
+        <a class="navbar-brand" href="index.php"><span class="fa fa-unlock-alt" aria-hidden="true">&nbsp</span> CMS Admin</a>
     </div>
     <!-- Top Menu Items -->
     <ul class="nav navbar-right top-nav">
-        <li><a href="../index.php">Back</a></li>
+        <li><a href="../index.php"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -35,14 +35,14 @@
                 <a href="javascript:;" data-toggle="collapse" data-target="#posts"><i class="fa fa-fw fa-pencil"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="posts" class="collapse">
                     <li>
-                        <a href="#">View all posts</a>
+                        <a href="posts.php">View all posts</a>
                     </li>
                     <li>
                         <a href="#">Add post</a>
                     </li>
                 </ul>
             </li>
-            <li class="active">
+            <li>
                 <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Comments</a>
             </li>
             <li>
@@ -58,6 +58,9 @@
             </li>
             <li>
                 <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Profile</a>
+            </li>
+            <li>
+                <a href="categories.php"><i class="fa fa-th-list" aria-hidden="true"></i> Categories</a>
             </li>
         </ul>
     </div>
