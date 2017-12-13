@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><span class="fa fa-unlock-alt" aria-hidden="true">&nbsp</span> CMS Admin</a>
+        <a class="navbar-brand" href="index.php"><span class="fa fa-unlock-alt" aria-hidden="true"></span> CMS Admin</a>
     </div>
     <!-- Top Menu Items -->
     <ul class="nav navbar-right top-nav">

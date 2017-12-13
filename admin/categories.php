@@ -38,7 +38,7 @@
 
                         <?php
                         if(isset($_GET['update'])) {
-                            include "includes/categoryUpdates.php";
+                            include "includes/category_updates.php";
                         }
                         ?>
 
