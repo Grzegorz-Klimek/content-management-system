@@ -40,6 +40,9 @@
                     <li>
                         <a href="posts.php?source=add_post">Add post</a>
                     </li>
+                    <li>
+                        <a href="posts.php?source=edit_post">Edit post</a>
+                    </li>
                 </ul>
             </li>
             <li>
