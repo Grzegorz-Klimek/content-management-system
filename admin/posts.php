@@ -19,9 +19,26 @@
                         <small>create or edit them</small>
                     </h1>
 
-                    <?php include "view-all-posts.php" ?>
+                    <?php
 
+                    if(isset($_GET['source'])) {
+                        $source = $_GET['source'];
+                    } else {
+                        $source = '';
+                    }
 
+                    switch ($source) {
+                        case 'add_post';
+                        include "includes/add_post.php";
+                        break;
+
+                        default;
+                        include "includes/view-all-posts.php";
+
+                        break;
+                    }
+
+                    ?>
 
 
                 </div>
