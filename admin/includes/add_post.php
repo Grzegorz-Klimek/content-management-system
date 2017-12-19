@@ -16,6 +16,8 @@
         
         $post_comment_count = 4;
 
+        move_uploaded_file($post_image_temp, "../media/$post_image");
+
     }
 
 ?>
