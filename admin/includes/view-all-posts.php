@@ -9,6 +9,7 @@
         <th>Tags</th>
         <th>Comments</th>
         <th>Date</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -34,13 +35,24 @@
         echo "<td>{$post_title}</td>";
         echo "<td>{$post_category_id}</td>";
         echo "<td><img src='../media/$post_image'></td>";
-        echo "<td>{$post_tags}</td>";
+        echo "<td class='col-lg-2'>{$post_tags}</td>";
         echo "<td>{$post_comments}</td>";
         echo "<td>{$post_date}</td>";
+        echo "<td><a href='posts.php?delete={$post_id}' class='btn btn-sm btn-danger'><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></a></td>";
         echo "<tr>";
 
     }
 
+
+    if(isset($_GET['delete'])) {
+
+        $post_id = $_GET['delete'];
+        $query = "DELETE FROM posts WHERE post_id = {$post_id}";
+        $delete_query = mysqli_query($connection, $query);
+
+    }
+
     ?>
+
     </tbody>
 </table>

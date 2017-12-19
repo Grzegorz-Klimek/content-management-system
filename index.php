@@ -16,7 +16,7 @@
 
                 <?php
 
-                        $query_posts = "SELECT * FROM posts";
+                        $query_posts = "SELECT * FROM posts ORDER BY post_date DESC";
 
                         $select_all_posts_query = mysqli_query($connection, $query_posts);
 
